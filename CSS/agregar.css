@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+.vista__registro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.rojo {
+    background-color: #C9231B;
+    width: 350px;
+    height: 100vh;
+}
+
+.container__title {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.container__registro {
+    height: 100vh;
+    width: 1331px;
+    left: 400px;
+    top: 100px;
+    border-radius: 0px;
+    margin-top: 30px;
+
+}
+
+.icon {
+    color: #C9231B;
+    font: 30px;
+}
+
+.formulario {
+    width: 800px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.formulario label {
+    height: 19px;
+    width: 72px;
+    left: 0px;
+    top: 0px;
+    border-radius: nullpx;
+}
+
+.names>div>input {
+    height: 50px;
+    width: 350px;
+    left: 0px;
+    top: 24px;
+    border-radius: 10px;
+    border: 3px solid #ED00D5;
+}
+
+.area_user_edad>div>input {
+    height: 60px;
+    width: 250px;
+    left: 0px;
+    top: 24px;
+    border-radius: 10px;
+    border: 3px solid #ED00D5;
+}
+
+.formulario>div>input {
+    height: 60px;
+    width: 800px;
+    left: 0px;
+    top: 24px;
+    border-radius: 10px;
+    border: 3px solid #ED00D5;
+}
+
+.names>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area_user_edad>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.area_user_edad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion,
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.direccion>input,
+.email>input {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ED00D5;
+}
+
+.boton__enviar {
+    text-align: center;
+}
+
+.enviar {
+    height: 60px;
+    width: 200px;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
+    background-color: #CC2233;
+    color: white;
+    border: none;
+}

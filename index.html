@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MISION</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script defer src="./JS/mains.js" type="module"></script>
+</head>
+<body>
+    <main class="vista__usuarios">
+        <section class="rojo"></section>
+        <main class="container">
+            <header class="container__title">
+                <h1 class="title">Usuarios</h1>
+                <a class="crear__usuario" id="crear__usuario" href="./HTML/agregar.html">Crear Usuario</a>
+            </header>
+            <section class="buscar__usuario">
+                <label for="">Buscar Usuario <input type="text" id="buscar__usuario"></label>
+            </section>
+            <main class="container__tabla">
+                <table class="tabla" id="tabla">
+                    <thead>
+                        <tr>
+                            <th>Area <img src="./Images/Vector.svg" alt=""></th>
+                            <th>Nombre <img src="./Images/Vector.svg" alt=""></th>
+                            <th>Usuario <img src="./Images/Vector.svg" alt=""></th>
+                            <th>Email</th>
+                            <th>Edad <img src="./Images/Vector.svg" alt=""></th>
+                        </tr>  
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </main>
+        </main>
+    </main>
+</body>
+</html>

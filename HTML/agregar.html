@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar</title>
+    <link rel="stylesheet" href="../CSS/agregar.css">
+    <script defer src="../JS/agregar.js"></script>
+</head>
+<body>
+    <main class="vista__registro">
+        <section class="rojo"></section>
+        <main class="container__registro">
+            <header class="container__title">
+                <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M5 12l14 0"></path>
+                    <path d="M5 12l6 6"></path>
+                    <path d="M5 12l6 -6"></path>
+                 </svg></a>
+                <h2 class="title">Registro Personas</h2>
+            </header>
+            <main class="registro__formulario">
+                <form class="formulario" action="../index.html">
+                    <div class="names">
+                        <div class="nombres">
+                            <label for="">Nombres</label>
+                            <input type="text" id="nombres">    
+                        </div>
+                        <div class="apellidos">
+                            <label for="">Apellidos</label>
+                            <input type="text" id="apellidos">
+                        </div>
+                    </div>
+                    <div class="area_user_edad">
+                        <div class="area">
+                            <label for="">Area</label>
+                            <input type="text" id="area">
+                        </div>
+                        <div class="usuario">
+                            <label for="">Usuario</label>
+                            <input type="text" id="usuario">
+                        </div>
+                        <div class="edad">
+                            <label for="">Edad</label>
+                            <input type="number" id="edad">
+                        </div>
+                    </div>
+                    <div class="direccion">
+                        <label for="">Direccion</label>
+                        <input type="text" id="direccion">
+                    </div>
+                    <div class="email">
+                        <label for="">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="boton__enviar">
+                        <button type="submit" class="enviar" id="enviar">Enviar</button>
+                    </div>
+                <form/>
+            </main>
+        </main>
+    </main>
+</body>
+</html>
