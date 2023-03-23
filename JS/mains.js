@@ -13,6 +13,17 @@ if (localStorage.getItem('datos') == null) {
     datos = JSON.parse(localStorage.getItem('datos'))
 }
 function tablaUsuarios() {
+
+    datos.sort((a,b)=>{
+        if(a.area > b.area){
+            return 1
+        }
+        if(a.area < b.area){
+            return -1
+        }
+        return
+    })
+    console.log(datos)
     for (let i = 0; i < datos.length; i++) {
         let row = rows[datos[i].area]
         if (!row) {
@@ -22,7 +33,7 @@ function tablaUsuarios() {
             row.count++
         }
     }
-    
+
     tbodyOrdenado = ''
     for (let i in rows) {
         let row = rows[i]
@@ -38,12 +49,12 @@ function tablaUsuarios() {
             `
         }
     }
-    tbody.innerHTML = tbodyOrdenado    
+    tbody.innerHTML = tbodyOrdenado
 }
 
 function tablaUsuariosBuscar() {
     datos.forEach((e) => {
-        if (buscar.value == e.usuario) {
+        if (buscar.value == e.nombres) {
             usuarioEncontrado = e
             encontrado = true
         } else if (buscar.value == '') {
@@ -56,7 +67,7 @@ function tablaUsuariosBuscar() {
             tbody.innerHTML = ` 
             <tr>
                 <td>${usuarioEncontrado.area}</td>
-                <td>${usuarioEncontrado.nombres}</td>
+                <td>${usuarioEncontrado.nombres} ${usuarioEncontrado.nombres}</td>
                 <td>${usuarioEncontrado.usuario}</td>
                 <td>${usuarioEncontrado.email}</td>
                 <td>${usuarioEncontrado.edad}</td>
@@ -64,6 +75,7 @@ function tablaUsuariosBuscar() {
         `
         }
         encontrado = false
+
     })
 }
 
