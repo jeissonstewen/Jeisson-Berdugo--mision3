@@ -29,8 +29,7 @@ function tablaUsuarios() {
         tbodyOrdenado += `<tr>
         <td rowspan="${row.count}">${row.area}</td>`
         for (let i = 0; i < row.count; i++) {
-            tbodyOrdenado += `
-            <td>${datos[row.index + i].area}
+            tbodyOrdenado += `  
                 <td>${datos[row.index + i].nombres} ${datos[row.index + i].apellidos}</td>
                 <td>${datos[row.index + i].usuario}
                 <td>${datos[row.index + i].email}
@@ -75,4 +74,3 @@ window.addEventListener('load', function () {
 buscar__usuario.addEventListener('input', () => {
     tablaUsuariosBuscar()
 })
-
